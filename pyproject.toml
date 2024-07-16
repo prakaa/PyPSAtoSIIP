@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "pypsatosienna"
+version = "0.1.0"
+description = ""
+authors = ["prakaa <abiprakash007@gmail.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pypsa = "^0.28.0"
+pandas = "^2.2.2"
+numpy = "^2.0.0"
+matplotlib = "^3.9.1"
+highspy = "^1.7.2"
+
+[tool.poetry.group.dev.dependencies]
+ipdb = "^0.13.13"
+ipython = "^8.26.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

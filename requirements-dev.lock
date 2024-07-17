@@ -16,22 +16,31 @@ blosc2==2.7.0
     # via tables
 bottleneck==1.4.0
     # via linopy
+cartopy==0.23.0
+    # via pypsatosienna
 certifi==2024.7.4
     # via netcdf4
     # via pyogrio
     # via pyproj
+    # via requests
 cftime==1.6.4
     # via netcdf4
+charset-normalizer==3.3.2
+    # via requests
 click==8.1.7
     # via dask
 cloudpickle==3.0.0
     # via dask
+comm==0.2.2
+    # via ipykernel
 contourpy==1.2.1
     # via matplotlib
 cycler==0.12.1
     # via matplotlib
 dask==2024.7.0
     # via linopy
+debugpy==1.8.2
+    # via ipykernel
 decorator==5.1.1
     # via ipdb
     # via ipython
@@ -48,11 +57,20 @@ geopandas==1.0.1
     # via pypsa
 highspy==1.7.2
     # via pypsatosienna
+idna==3.7
+    # via requests
 ipdb==0.13.13
+ipykernel==6.29.5
 ipython==8.26.0
     # via ipdb
+    # via ipykernel
 jedi==0.19.1
     # via ipython
+jupyter-client==8.6.2
+    # via ipykernel
+jupyter-core==5.7.2
+    # via ipykernel
+    # via jupyter-client
 kiwisolver==1.4.5
     # via matplotlib
 linopy==0.3.11
@@ -60,14 +78,18 @@ linopy==0.3.11
 locket==1.0.0
     # via partd
 matplotlib==3.9.1
+    # via cartopy
     # via pypsa
     # via pypsatosienna
 matplotlib-inline==0.1.7
+    # via ipykernel
     # via ipython
 msgpack==1.0.8
     # via blosc2
 ndindex==1.8
     # via blosc2
+nest-asyncio==1.6.0
+    # via ipykernel
 netcdf4==1.7.1.post1
     # via pypsa
 networkx==3.3
@@ -79,6 +101,7 @@ numexpr==2.10.1
 numpy==2.0.0
     # via blosc2
     # via bottleneck
+    # via cartopy
     # via cftime
     # via contourpy
     # via geopandas
@@ -96,9 +119,11 @@ numpy==2.0.0
     # via tables
     # via xarray
 packaging==24.1
+    # via cartopy
     # via dask
     # via deprecation
     # via geopandas
+    # via ipykernel
     # via matplotlib
     # via pyogrio
     # via tables
@@ -116,10 +141,14 @@ pexpect==4.9.0
     # via ipython
 pillow==10.4.0
     # via matplotlib
+platformdirs==4.2.2
+    # via jupyter-core
 polars==1.2.0
     # via linopy
 prompt-toolkit==3.0.47
     # via ipython
+psutil==6.0.0
+    # via ipykernel
 ptyprocess==0.7.0
     # via pexpect
 pure-eval==0.2.2
@@ -134,20 +163,30 @@ pyogrio==0.9.0
 pyparsing==3.1.2
     # via matplotlib
 pyproj==3.6.1
+    # via cartopy
     # via geopandas
 pypsa==0.28.0
     # via pypsatosienna
+pyshp==2.3.1
+    # via cartopy
 python-dateutil==2.9.0.post0
+    # via jupyter-client
     # via matplotlib
     # via pandas
 pytz==2024.1
     # via pandas
 pyyaml==6.0.1
     # via dask
+pyzmq==26.0.3
+    # via ipykernel
+    # via jupyter-client
+requests==2.32.3
+    # via pypsatosienna
 scipy==1.14.0
     # via linopy
     # via pypsa
 shapely==2.0.5
+    # via cartopy
     # via geopandas
 six==1.16.0
     # via asttokens
@@ -160,13 +199,22 @@ toolz==0.12.1
     # via dask
     # via linopy
     # via partd
+tornado==6.4.1
+    # via ipykernel
+    # via jupyter-client
 tqdm==4.66.4
     # via linopy
 traitlets==5.14.3
+    # via comm
+    # via ipykernel
     # via ipython
+    # via jupyter-client
+    # via jupyter-core
     # via matplotlib-inline
 tzdata==2024.1
     # via pandas
+urllib3==2.2.2
+    # via requests
 validators==0.33.0
     # via pypsa
 wcwidth==0.2.13

@@ -11,6 +11,8 @@ dependencies = [
     "pypsa>=0.28.0",
     "matplotlib>=3.9.1",
     "highspy>=1.7.2",
+    "cartopy>=0.23.0",
+    "requests>=2.32.3",
 ]
 readme = "README.md"
 requires-python = ">= 3.8"
@@ -24,6 +26,7 @@ managed = true
 dev-dependencies = [
     "ipdb>=0.13.13",
     "ipython>=8.26.0",
+    "ipykernel>=6.29.5",
 ]
 
 [tool.hatch.metadata]
